@@ -6,10 +6,21 @@ public class Main {
         GUI gui = new GUI();
         Scanner scanner = new Scanner(System.in);
 
+        /*int x = Integer.parseInt(scanner.nextLine());
+        System.out.println("-------------------");
+        boolean clientVip = false;
+        String login, password;
+
+        login = scanner.nextLine();
+        password = scanner.nextLine();
+        if(login.equals("vip") && password.equals("vip")) {
+            clientVip = true;
+        }*/
         while(true) {
             gui.showMainMenu();
             switch (scanner.nextLine()) {
                 case "1":
+                    //gui.listCars(db.cars, clientVip);
                     gui.listCars(db.cars);
                     break;
                 case "2":

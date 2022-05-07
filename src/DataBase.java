@@ -6,6 +6,7 @@ public class DataBase {
         this.cars[1] = new Car("Audi", "A3", 400.00, "KR22");
         this.cars[2] = new Car("Toyota", "Corolla", 300.00, "KR33");
         this.cars[3] = new Car("Kia", "Ceed", 200.00, "KR44");
+        //this.cars[3].vip = true;
     }
 
     /*boolean checkCar(String plate) {

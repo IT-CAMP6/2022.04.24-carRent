@@ -5,6 +5,8 @@ public class Car {
     String plate;
     boolean rent;
 
+    //boolean vip = false;
+
     public Car() {
     }
 

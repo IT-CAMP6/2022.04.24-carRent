@@ -5,18 +5,20 @@ public class GUI {
         System.out.println("3. Exit");
     }
 
-    void listCars(Car[] cars) {
+    void listCars(Car[] cars/*, boolean clientVip*/) {
         for(Car car : cars) {
-            System.out.print(car.brand + " " +
-                    car.model + " Cena: " +
-                    car.price + " Numer rejestracyjny: " +
-                    car.plate + " Zajety : ");
+            //if(!car.vip || (car.vip && clientVip)) {
+                System.out.print(car.brand + " " +
+                        car.model + " Cena: " +
+                        car.price + " Numer rejestracyjny: " +
+                        car.plate + " Zajety : ");
 
-            if(car.rent) {
-                System.out.println("Tak");
-            } else {
-                System.out.println("Nie");
-            }
+                if (car.rent) {
+                    System.out.println("Tak");
+                } else {
+                    System.out.println("Nie");
+                }
+            //}
 
             /*if(car.rent) {
                 System.out.print(car.brand + " " +
